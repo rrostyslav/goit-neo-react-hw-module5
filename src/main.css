@@ -1,0 +1,2 @@
+/* Note: this is only for css reset & normalize. In my opinion, Tailwind Preflight is the best normalize */
+@import 'tailwindcss/preflight.css';

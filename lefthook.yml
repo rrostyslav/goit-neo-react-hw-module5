@@ -1,0 +1,9 @@
+pre-commit:
+  jobs:
+    - run: npx prettier -w -- {staged_files}
+      glob: '*.{js,jsx,json,css,md}'
+      stage_fixed: true
+
+    - run: npx eslint --fix -- {staged_files}
+      glob: '*.{js,jsx}'
+      stage_fixed: true
